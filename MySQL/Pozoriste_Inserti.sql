@@ -47,8 +47,12 @@ values
 insert into repertoar values (0,'2019-03-01');
 insert into repertoar values (0,'2019-04-01');
 insert into repertoar values (0,'2019-05-01');
+insert into repertoar values (0,'2019-07-01');
 insert into igranje
 values
 ('2019-3-1',(select id from scena where scena.nazivScene="Petar Kocic"),(select id from gostujuca_predstava where gostujuca_predstava.naziv="Kafa i cigarete"),null,(select id from repertoar where repertoar.mjesecIGodina='2019-3-1')),
 ('2019-3-2',(select id from scena where scena.nazivScene="Petar Kocic"),null,(select id from predstava where predstava.naziv="O, kakav divan dan"),(select id from repertoar where repertoar.mjesecIGodina='2019-3-1')),
+('2019-10-7',(select id from scena where scena.nazivScene="Petar Kocic"),(select id from gostujuca_predstava where gostujuca_predstava.naziv="Kafa i cigarete"),null,(select id from repertoar where repertoar.mjesecIGodina='2019-7-1')),
+('2019-12-7',(select id from scena where scena.nazivScene="Petar Kocic"),(select id from gostujuca_predstava where gostujuca_predstava.naziv="Kafa i cigarete"),null,(select id from repertoar where repertoar.mjesecIGodina='2019-7-1')),
+('2019-7-24',(select id from scena where scena.nazivScene="Petar Kocic"),null,(select id from predstava where predstava.naziv="O, kakav divan dan"),(select id from repertoar where repertoar.mjesecIGodina='2019-7-1')),
 ('2019-3-3',(select id from scena where scena.nazivScene="Petar Kocic"),null,(select id from predstava where predstava.naziv="Slavna Florens"),(select id from repertoar where repertoar.mjesecIGodina='2019-3-1'));
