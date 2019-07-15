@@ -11,7 +11,6 @@ public class AuthServer {
 
 
 	public static void main(String[] args) {
-
 		try {
 			// slusaj zahteve na datom portu
 			ServerSocket ss = new ServerSocket(TCP_PORT);
