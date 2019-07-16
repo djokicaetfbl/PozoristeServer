@@ -56,3 +56,16 @@ values
 ('2019-7-12',(select id from scena where scena.nazivScene="Petar Kocic"),(select id from gostujuca_predstava where gostujuca_predstava.naziv="Kafa i cigarete"),null,(select id from repertoar where repertoar.mjesecIGodina='2019-7-1')),
 ('2019-7-24',(select id from scena where scena.nazivScene="Petar Kocic"),null,(select id from predstava where predstava.naziv="O, kakav divan dan"),(select id from repertoar where repertoar.mjesecIGodina='2019-7-1')),
 ('2019-3-3',(select id from scena where scena.nazivScene="Petar Kocic"),null,(select id from predstava where predstava.naziv="Slavna Florens"),(select id from repertoar where repertoar.mjesecIGodina='2019-3-1'));
+
+insert into vrsta_angazmana values 
+(0,"Reziser"),
+(0,"Koreograf"),
+(0,"Dirigent"),
+(0,"Scenograf"),
+(0,"Kostimograf"),
+(0,"Tonac"),
+(0,"Asistent rezisera"),
+(0,"Asistent koreografa"),
+(0,"Dizajner osvjetljenja");
+#comboBoxVrstaAngazmana.getItems().addAll("Reditelj","Koreograf","Dirigent","Scenograf","Kostimograf","Tonac","Dizajner osvjetljenja","Asistent reditelja","Asistent koreografa"
+ #      // ,"Korepetitor");
