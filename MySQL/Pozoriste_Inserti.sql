@@ -12,6 +12,28 @@ call dodavanjeAdministrativnogRadnika('Djordje','Palavestra','1234554321555',
 call dodavanjeBiletara('Milica','Medan','4545456767678',
 '065777888','mina','9bb840df7f699d6547f49fd6f9ed17b2d9dd34148f0b01e798d7c51da897ea1a','Biletar',@pero);
 
+call dodavanjeUmjetnika('Dara','Džokić','1001002002003','065521657, 066120210','Основну школу и гимназију завршила је на Звездари, након чега је уписала Факултет драмских уметности. Дипломирала је у класи професора Миње Дедића, на класи са Браниславом Лечићем и Даницом Максимовић. Прву улогу добила је у позоришту Атеље 212. чији члан постаје 1980. године. Играла је и на сценама Београдског драмског позоришта, Народног позоришта у Београду и Звездара театра. Била је учесник фестивала у Будви, Суботици и Сплиту. Глумила је у великом броју филмова и серија и добитница је бројних награда.',@pero);
+
+call dodavanjeUmjetnika('Branko','Vidaković','1221012002034','0651212314','Бранко Видаковић је рођен у Београду 10. септембра 1959. године. Глуму је дипломирао на Факултету драмских уметности у Београду, у класи професора Предрага Бајчетића 1983. године. Стални је члан Народног позоришта у Београду. ',@pero);
+
+call dodavanjeUmjetnika('Jelena','Đokić','4001212345129','066100231414','Јелена Ђокић (Сплит, 24. мај 1977) је српска глумица. Рођена је у Сплиту, основну школу завршила у Младеновцу, средњу школу у Херцег Новом, а глумачку академију на Цетињу. Живи и ради у Београду.
+
+Удата је за Светозара Цветковића и са њим има ћерку Клару и сина Луку',@pero);
+
+call dodavanjeUmjetnika('Petar','Benčina','1546876254855','062222574','Петар Бенчина рођен је 7. децембра 1984. године у Београду. Дипломирао је глуму 2008. године на Факултету драмских уметности у Београду у класи професора Драгана Петровића Пелета. Стални је члан Београдског драмског позоришта је од 2010. године.[1] Добитник је Награде Београдског драмског позоришта за вишегодишњи допринос БДП-у и позоришном животу Србије „Татјана Лукјанова“ 2012. године.[1] Бавио се и синхронизацијом анимираних и играних филмова и серија на српски језик, за студије Лаудворкс, Блу хаус и Ливада Београд.[2] Од 18. јуна 2016. године, у браку је са глумицом Тамаром Драгичевић,[3] са којом има ћерку Сташу.[',@pero);
+
+call dodavanjeUmjetnika('Jelena','Bogavac','1475953684558','003547961','Neustrašiva rediteljka koja je skakala sa litice i iz aviona, predvodila bandu, mnogo šta uradila pre roka, igrom na sceni, u dramaterapiji, pobedila je i strah od starosti
+
+Rediteljka Jelena Bogavac (43) nikad nije krila da je zavisna od adrenalina. Starija kćerka novinara Olivere i Zorana Bogavca sve je morala da proba kad mu vreme nije.
+
+Pre polaska u školu sa dedom, komesarom Prve proleterske brigade, preplivavala je Dunav. I to u maju, kad reka nadođe.',@pero);
+
+call dodavanjeUmjetnika('Marko','Berkeš','1212555487635','066154789215','Marko Mladenović koji  u kraju oko Prilepa. Marko je vremenom izrastao u mitološku figuru, i tako postao nacionalni junak u narodnim predajama i pripovjetkama Bugara, Srba, Makedonaca, Hrvata, Slovenaca, Crnogoraca, Rumunja (i uopće naroda Balkanskog poluotoka). U narodnoj predaji on je zaštitnik i spasitelj kršćanstva za vrijeme duge otomanske okupacije Balkana. ',@pero);
+
+call dodavanjeUmjetnika('Uroš','Mladenović','1541545635632','154781147992','Rođen 1987. godine u Paraćinu gde je završio srednju školu. Diplomirao je na Visokoj turističkoj i na Akademiji umetnosti u Novom Sadu, glumu u klasi profesora Ljuboslava Majere. Master studije je završio u Novom Sadu na Akademiji i 2015. godine upisao doktorske studije dramskih i audiovizuelnih umetnosti.
+
+Posvećen je raznim radionicama. Bio je mentor na radionici Improvizacija u pokretu i asistent na radionici Dramaterapije. Vodi Omladinsku pozorišnu scenu u Paraćinu, što pored kreativne edukacije mladih, podrazumeva koncipiranje repertoara ove scene i rad na njenim produkcijama. Osnivač je Teleport teatra, koji se bavi umetničkom edukacijom mladih, sa posebnim fokusom na decentralizaciji omladinske kulture i stvaralaštva i kreativnom radu sa mladima.',@pero);
+
 call dodavanjeUmjetnika('Sloboda','Micalović','1002003003001','066444676','Слобода Мићаловић Ћетковић (Лесковац, 21. август 1981) српска је филмска и позоришта глумица.
 Завршила је средњу музичку школу, а студирала Факултет драмских уметности у Београду у класи Предрага Бајчетића. Публика је памти по улогама у мјузиклима Позоришта на Теразијама, а стални позоришни ангажман добила је 2012. године у Народном позоришту у Београду.
 Прву битну позоришну улогу имала је током студирања 2000. године, Борисава Станковића у режији Југа Радивојевића. Публика је памти и по улогама у представама Тартиф као Елмира, Чикаго као Рокси Харт, Френки и Џони као Френки и многим другим',@pero);
@@ -73,6 +95,16 @@ insert into repertoar values (0,'2019-05-01');
 insert into repertoar values (0,'2019-07-01');
 insert into igranje
 values
+('2019-4-1',(select id from scena where scena.nazivScene="Petar Kocic"),(select id from gostujuca_predstava where gostujuca_predstava.naziv="Kafa i cigarete"),null,(select id from repertoar where repertoar.mjesecIGodina='2019-4-1')),
+('2019-4-10',(select id from scena where scena.nazivScene="Petar Kocic"),(select id from gostujuca_predstava where gostujuca_predstava.naziv="Kafa i cigarete"),null,(select id from repertoar where repertoar.mjesecIGodina='2019-4-1')),
+('2019-4-12',(select id from scena where scena.nazivScene="Petar Kocic"),(select id from gostujuca_predstava where gostujuca_predstava.naziv="Kafa i cigarete"),null,(select id from repertoar where repertoar.mjesecIGodina='2019-4-1')),
+('2019-4-27',(select id from scena where scena.nazivScene="Petar Kocic"),(select id from gostujuca_predstava where gostujuca_predstava.naziv="Kafa i cigarete"),null,(select id from repertoar where repertoar.mjesecIGodina='2019-4-1')),
+
+('2019-5-11',(select id from scena where scena.nazivScene="Petar Kocic"),(select id from gostujuca_predstava where gostujuca_predstava.naziv="Kafa i cigarete"),null,(select id from repertoar where repertoar.mjesecIGodina='2019-5-1')),
+('2019-5-12',(select id from scena where scena.nazivScene="Petar Kocic"),(select id from gostujuca_predstava where gostujuca_predstava.naziv="Kafa i cigarete"),null,(select id from repertoar where repertoar.mjesecIGodina='2019-5-1')),
+('2019-5-21',(select id from scena where scena.nazivScene="Petar Kocic"),null,(select id from predstava where predstava.naziv="O, kakav divan dan"),(select id from repertoar where repertoar.mjesecIGodina='2019-5-1')),
+
+
 ('2019-3-1',(select id from scena where scena.nazivScene="Petar Kocic"),(select id from gostujuca_predstava where gostujuca_predstava.naziv="Kafa i cigarete"),null,(select id from repertoar where repertoar.mjesecIGodina='2019-3-1')),
 ('2019-3-2',(select id from scena where scena.nazivScene="Petar Kocic"),null,(select id from predstava where predstava.naziv="O, kakav divan dan"),(select id from repertoar where repertoar.mjesecIGodina='2019-3-1')),
 ('2019-7-10',(select id from scena where scena.nazivScene="Petar Kocic"),(select id from gostujuca_predstava where gostujuca_predstava.naziv="Kafa i cigarete"),null,(select id from repertoar where repertoar.mjesecIGodina='2019-7-1')),
